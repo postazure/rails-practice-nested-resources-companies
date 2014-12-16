@@ -15,7 +15,7 @@
         <tr>
           <td><%= company.name %></td>
           <td>
-            <em>link to the events for this company here</em>
+            <%= link_to "Events", company_events_path(company) %>
           </td>
         </tr>
       <% end %>

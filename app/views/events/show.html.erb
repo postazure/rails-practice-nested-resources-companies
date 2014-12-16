@@ -1,12 +1,12 @@
 <div class="page-header">
   <div class="pull-right">
-    <%= link_to "Edit", edit_event_path(@event), class: "btn btn-info" %>
+    <%= link_to "Edit", edit_company_event_path(@company, @event), class: "btn btn-info" %>
   </div>
   <h1>Show Event</h1>
 </div>
 
 <ol class="breadcrumb">
-  <li><%= link_to "Events", events_path %></li>
+  <li><%= link_to "Events", company_events_path(@company) %></li>
   <li class="active">Show</li>
 </ol>
 
